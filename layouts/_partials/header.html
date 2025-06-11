@@ -1,2 +1,8 @@
-<a href="{{ .Site.BaseURL | relLangURL }}"><h1>{{ site.Title }}</h1></a>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <a id="header-a" href="{{ .Site.BaseURL | relLangURL }}">
+        <h1>b</h1>
+        <h1 id="ak">ak</h1>
+        <h1>ery</h1>
+    </a>
+</div>
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}

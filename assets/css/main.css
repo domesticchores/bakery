@@ -4,14 +4,14 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   margin: 1rem;
-  max-width: 768px;
+  /* max-width: 768px; */
 }
 
 header {
-  width: 94rem;
   background-color: #302f29;
   border-bottom: 1px solid #222;
   margin-bottom: 1rem;
+  font-family: 'Monofett';
 }
 
 footer {
@@ -23,4 +23,17 @@ footer {
 a {
   color: #9f9462;
   text-decoration: none;
+}
+
+#header-a {
+  display: flex;
+}
+
+#header-a:hover #ak{
+  color: #28ce00;
+}
+
+#ak {
+  transition:all 500ms;
+  color: #94629f;
 }
