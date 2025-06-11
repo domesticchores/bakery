@@ -26,14 +26,25 @@ a {
 }
 
 #header-a {
+  transition:all 200ms;
   display: flex;
+  font-size: x-large;
+}
+
+#header-a h1 {
+  margin: 0.2em 0;
+}
+
+#header-a:hover {
+  transform: scale(1.05);
 }
 
 #header-a:hover #ak{
   color: #28ce00;
+  transform:scale(1.1) rotate(-10deg);
 }
 
 #ak {
-  transition:all 500ms;
+  transition:all 200ms;
   color: #94629f;
 }
