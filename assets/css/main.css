@@ -1,25 +1,47 @@
 html {
   background-color: white;
+  --bg-color-primary: #121212;
+  --bg-color-secondary: #302f29;
+  --bg-color-tertiary: #37352b;
+
+  --txt-color-primary: #ffffff;
+  --txt-color-secondary: #b5b5b5;
+  --txt-color-tertiary: #ffffff;
+
+  --txt-color-accent: #28ce00;
 }
 
 body {
-  color: #ffffff;
+  color: var(--txt-color-primary);
   background-color: #121212;
   font-family: monospace;
   line-height: 1.5;
   margin: auto;
-  max-width: 1000px;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    min-width: 250px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    max-width: 768px;
+  }
 }
 
 header {
-  background-color: #302f29;
+  background-color: var(--bg-color-secondary);
   border-bottom: 1px solid #222;
   margin-bottom: 1rem;
   font-family: 'Pixelify Sans';
 }
 
 footer {
-  background-color: #302f29;
+  background-color: var(--bg-color-secondary);
   border-top: 1px solid #222;
   margin-top: 1rem;
 }
@@ -29,18 +51,22 @@ a {
   text-decoration: none;
 }
 
+#header-div {
+  margin-bottom: 1em;
+}
+
+#header-div h1, p {
+  margin: 0;
+}
+
 #header-a {
   transition:all 200ms;
   display: flex;
   font-size: x-large;
-  color: #28ce00;
-}
-
-#header-a h1 {
-  margin: 0.2em 0;
+  color: var(--txt-color-accent);
 }
 #header-a:hover #ak{
-  color: #28ce00;
+  color: var(--primary-color);
   transform:scale(1.1) rotate(-10deg);
 }
 
